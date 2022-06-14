@@ -53,10 +53,11 @@ class _HomeModalAddState extends State<HomeModalAdd>{
                 overflow: TextOverflow.ellipsis,
                 style:TextStyle(
                   fontWeight: FontWeight.w900,
-                  fontSize: 25
+                  fontSize: 25,
+                  color: Color.fromARGB(255, 119, 9, 42)
                 ),
               ),
-              SizedBox(height: 10,),
+              SizedBox(height: 20,),
               const Text(
                 'Lorem Ipsum is simply dummy text of the printing \nand typesetting industry, dummy text of the printing \nand typesetting industry',
                 textAlign: TextAlign.center,
@@ -65,6 +66,64 @@ class _HomeModalAddState extends State<HomeModalAdd>{
                   fontWeight: FontWeight.w400,
                   fontSize: 16,
                   color: Color.fromARGB(213, 49, 47, 47),
+                ),
+              ),
+              SizedBox(height: 30,),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Container(
+                    alignment: Alignment.center,
+                    child: RawMaterialButton(
+                    onPressed: () {},
+                    elevation: 2.0,
+                    fillColor: Color.fromARGB(255, 119, 9, 42),
+                    child: Text(
+                      'P',
+                      style: TextStyle(color: Colors.white)
+                    ),
+                    padding: EdgeInsets.all(15.0),
+                    shape: CircleBorder(),
+                  ),
+                  ),
+                  Container(
+                    alignment: Alignment.center,
+                    child: RawMaterialButton(
+                    onPressed: () {},
+                    elevation: 2.0,
+                    fillColor: Color.fromARGB(255, 119, 9, 42),
+                    child: Text(
+                      'M',
+                      style: TextStyle(color: Colors.white),
+                    ),
+                    padding: EdgeInsets.all(15.0),
+                    shape: CircleBorder(),
+                  ),
+                  ),
+                  Container(
+                    alignment: Alignment.center,
+                    child: RawMaterialButton(
+                    onPressed: () {},
+                    elevation: 2.0,
+                    fillColor: Color.fromARGB(255, 119, 9, 42),
+                    child: Text(
+                      'G',
+                      style: TextStyle(color: Colors.white)
+                    ),
+                    padding: EdgeInsets.all(15.0),
+                    shape: CircleBorder(),
+                  ),
+                  )
+                ],
+              ),
+              SizedBox(height: 20,),
+              Text(
+                'R\$129,90',
+                textAlign: TextAlign.left,
+                overflow: TextOverflow.ellipsis,
+                style:TextStyle(
+                  fontWeight: FontWeight.w900,
+                  fontSize: 25
                 ),
               )
             ],
